@@ -1,0 +1,85 @@
+{% load static %}
+
+
+<header class="main-header header-style-four">
+        
+    <!-- Header Upper -->
+    <div class="header-upper">
+        <div class="auto-container clearfix">
+            <!--Info-->
+            <div class="logo-outer">
+                <div class="logo"><a href="{% url 'seyitechapp:home' %}"><img src="{% static 'public/images/seyitechlogo.png' %}" alt="" title=""></a></div>
+            </div>
+
+            <!--Nav Box-->
+            <div class="nav-outer clearfix">
+                <!--Mobile Navigation Toggler For Mobile--><div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
+                <nav class="main-menu navbar-expand-md navbar-light">
+                    <div class="navbar-header">
+                        <!-- Togg le Button -->      
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon flaticon-menu-1"></span>
+                        </button>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                        <ul class="navigation clearfix">
+                            <li class="current dropdown"><a href="{% url 'seyitechapp:home' %}">Home</a>
+                                <ul>
+                                    <li><a href="{% url 'seyitechapp:contact' %}">contact</a></li>
+                                    <li><a href="{% url 'seyitechapp:home' %}">Setting Up Agents</a></li>
+                                    <li><a href="{% url 'seyitechapp:project' %}">Deployment of Terminals</a></li>
+                                    <li class="dropdown"><a href="{% url 'seyitechapp:home' %}">Home</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="{% url 'seyitechapp:about' %}">About us</a>
+                                <ul>
+                                    <li><a href="{% url 'seyitechapp:about' %}">Our Introduction</a></li>
+                                    <li><a href="{% url 'seyitechapp:team' %}">Our Team</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="{% url 'seyitechapp:services' %}">Services</a>
+                                <ul>
+                                    <li><a href="{% url 'seyitechapp:services' %}"> Agency Banking </a></li>
+                                    <li><a href="{% url 'seyitechapp:services' %}"> Bills payment</a></li>
+                            </li>
+                                                     
+                    </div>
+                </nav>
+                <!-- Main Menu End-->
+                
+                <!-- Outer Box -->
+                <div class="outer-box clearfix">
+                    <div class="search-box-btn"><span class="icon flaticon-magnifying-glass-1"></span></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--End Header Upper-->
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
+        
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="{% url 'seyitechapp:home' %}"><img src="{% static 'public/images/seyitechlogo.png' %}" alt="" title=""></a></div>
+            <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
+            <!--Social Links-->
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div><!-- End Mobile Menu -->
+
+</header>
+<!-- End Main Header -->

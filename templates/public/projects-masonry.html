@@ -1,0 +1,195 @@
+{% extends 'public/base.html' %}
+
+
+
+{% load static %}
+
+{% block content %}
+
+
+<body>
+
+    <!--Page Title-->
+    <section class="page-title" style="{% static 'public/background-image:url(images/background/5.jpg)' %}">
+    	<div class="auto-container">
+        	<h2> Our Portfolio </h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="{% url 'seyitechapp:home' %} ">home</a></li>
+                <li>Portfolio</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!-- Project Section -->
+	<section class="project-section">
+		<div class="auto-container">
+			<!-- Title Box -->
+			<div class="title-box">
+				<h2>Our Latest Projects</h2>
+			</div>
+		</div>
+		
+		<div class="outer-container">
+			
+			<!--Isotope Galery-->
+            <div class="sortable-agency">
+                
+                <!--Filter-->
+                <div class="filters clearfix">
+                	
+                	<ul class="filter-tabs filter-btns text-center clearfix">
+                        <li class="active filter" data-role="button" data-filter=".all">All Projects</li>
+						<li class="filter" data-role="button" data-filter=".residential">Remote Unbanking Location</li>
+						<li class="filter" data-role="button" data-filter=".commercial">Onboarding New Agents</li>
+						<li class="filter" data-role="button" data-filter=".hospital"></li>
+						<li class="filter" data-role="button" data-filter=".office"></li>
+                    </ul>
+                    
+                </div>
+                
+				<div class="items-container row clearfix">
+				
+					<!-- Gallery Item -->
+					<div class="gallery-item large-block agency-item all banking agency">
+						<div class="inner-box">
+							<figure class="image-box">
+								<img src="{% static 'public/images/kiosk.jpeg' %}" alt="">
+								<!--Overlay Box-->
+								<div class="overlay-box">
+									<div class="overlay-inner">
+										<div class="content">
+											<h3><a href="projects-fullwidth.html">Agents</a></h3>
+											<a href="{% static 'public/images/kiosk.jpeg' %}" data-fancybox="gallery-1" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+											<a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
+										</div>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+					
+					<!-- Gallery Item -->
+					<div class="gallery-item small-block masonry-item all hospital commercial">
+						<div class="inner-box">
+							<figure class="image-box">
+								<img src="{% static 'public/images/kiosk1.jpg' %}" alt="">
+								<!--Overlay Box-->
+								<div class="overlay-box">
+									<div class="overlay-inner">
+										<div class="content">
+											<h3><a href="projects-fullwidth.html">new agency</a></h3>
+											<a href="{% static 'public/images/kiosk1.jpg' %}" data-fancybox="gallery-1" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+											<a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
+										</div>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+					
+					<!-- Gallery Item -->
+					<div class="gallery-item small-block masonry-item all residential office commercial">
+						<div class="inner-box">
+							<figure class="image-box">
+								<img src="{% static 'public/images/kiosk2.jpg' %}" alt="">
+								<!--Overlay Box-->
+								<div class="overlay-box">
+									<div class="overlay-inner">
+										<div class="content">
+											<h3><a href="projects-fullwidth.html">new Onboarding</a></h3>
+											<a href="{% static 'public/images/kiosk2.jpg' %}" data-fancybox="gallery-1" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+											<a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
+										</div>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+					
+					<!-- Gallery Item -->
+					<div class="gallery-item small-block masonry-item all commercial">
+						<div class="inner-box">
+							<figure class="image-box">
+								<img src="{% static 'public/images/kiosk3.jpg' %}" alt="">
+								<!--Overlay Box-->
+								<div class="overlay-box">
+									<div class="overlay-inner">
+										<div class="content">
+											<h3><a href="#">agent</a></h3>
+											<a href="{% static 'public/images/kiosk3.jpg' %}" data-fancybox="gallery-1" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+											<a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
+										</div>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+					
+					<!-- Gallery Item -->
+					<div class="gallery-item large-block masonry-item all hospital office residential">
+						<div class="inner-box">
+							<figure class="image-box">
+								<img src="{% static 'public/images/agent.png'" alt="">
+								<!--Overlay Box-->
+								<div class="overlay-box">
+									<div class="overlay-inner">
+										<div class="content">
+											<h3><a href="#">Agents</a></h3>
+											<a href="{% static 'public/images/agent.png' %}" data-fancybox="gallery-1" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+											<a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
+										</div>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+					
+					<!-- Gallery Item -->
+					<div class="gallery-item small-block masonry-item all residential">
+						<div class="inner-box">
+							<figure class="image-box">
+								<img src="{% static 'public/images/agent.png' %}" alt="">
+								<!--Overlay Box-->
+								<div class="overlay-box">
+									<div class="overlay-inner">
+										<div class="content">
+											<h3><a href="#">agent and customer</a></h3>
+											<a href="{% static 'public/images/agent.png' %}" data-fancybox="gallery-1" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+											<a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
+										</div>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+					
+					<!-- Gallery Item -->
+					<div class="gallery-item small-block masonry-item all hospital office">
+						<div class="inner-box">
+							<figure class="image-box">
+								<img src="{% static 'public/images/agent1.jpg' %}" alt="">
+								<!--Overlay Box-->
+								<div class="overlay-box">
+									<div class="overlay-inner">
+										<div class="content">
+											<h3><a href="#">Newly onboarded agent </a></h3>
+											<a href="{% static 'public/images/agent1.jpg' %}" data-fancybox="gallery-1" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+											<a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
+										</div>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		
+		</div>
+	</section>
+	<!-- End Project Section -->
+
+	{% endblock %}
+	

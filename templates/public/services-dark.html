@@ -1,0 +1,83 @@
+{% extends 'public/base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="{% static 'public/background-image:url(images/background/5.jpg)' %}">
+    	<div class="auto-container">
+        	<h2>Services</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="{% url 'seyitechapp:home' %}">home</a></li>
+                <li>Services </li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!-- Services Page Section -->
+	<section class="services-page-section">
+		<div class="auto-container">
+			
+			<!-- Sec Title -->
+			<div class="sec-title light centered">
+				<h2>We Provide Different Services In Agency Banking</h2>
+				<div class="text">Bring to the table win-win survival strategies to ensure proactive domination. One of the major hurdles that banks faced was of providing banking services in rural areas. It’s because to open a branch in the rural area, one needs high..</div>
+			</div>
+			
+			<div class="row clearfix">
+				
+				<!-- Service Block -->
+				<div class="service-block-three col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<a href="#"><img src="{% static 'public/images/pos_android.png' %}" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<h3><a href="#">POS Terminals</a></h3>
+							<div class="text">Override the digital agency banking divide with high sophiscated Nanotech android terminals .</div>
+							<a href="residental-interior.html" class="read-more"></a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Service Block -->
+				<div class="service-block-three col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="250ms" data-wow-duration="1500ms">
+						<div class="image">
+							<a href="#"><img src="{% static 'public/images/kiosk2.jpg' %}" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<h3><a href="office-interior.html">Agent Recruitment</a></h3>
+							<div class="text">Bringing banking services to the unbanked regions.</div>
+							<a href="#" class="read-more"></a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Service Block -->
+				<div class="service-block-three col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+						<div class="image">
+							<a href="#"><img src="{% static 'public/images/bill_payment.jpg' %}" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<h3><a href="#">Bill Payment </a></h3>
+							<div class="text"></div>
+							<a href="#" class="read-more"></a>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+			</div>
+
+		</div>
+	</section>
+	<!-- End Story Section -->
+
+{% endblock content %}

@@ -1,0 +1,119 @@
+{% extends 'public/base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+
+<section class="page-title" style="{% static 'public/background-image:url(images/background/5.jpg)' %}">
+	<div class="auto-container">
+		<h2>Our Team</h2>
+		<ul class="page-breadcrumb">
+			<li><a href="{% url 'seyitechapp:home' %}">home</a></li>
+			<li></li>
+		</ul>
+	</div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section">
+	<div class="auto-container">
+		<!-- Sec Title -->
+		<div class="sec-title light centered">
+			<h2>Our Team</h2>
+			<div class="text">Our caregivers are trained specifically to provide quality services.</div>
+		</div>
+		
+		<div class="clearfix">
+			
+			<!-- Team Block -->
+			<div class="team-block col-lg-3 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="image">
+						<img src="{% static 'public/images/seyi3.jpeg' %}" alt="" />
+						<div class="overlay-box">
+							<ul class="social-icons">
+								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+								<li><a href="#"><i class="fab fa-skype"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="lower-content">
+						<h3><a href="team.html">Arowolo Ebine</a></h3>
+						<div class="designation">Relationship Manager</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Team Block -->
+			<div class="team-block col-lg-3 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="image">
+						<img src="{% static 'public/images/adewale.jpg' %}" alt="" />
+						<div class="overlay-box">
+							<ul class="social-icons">
+								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+								<li><a href="#"><i class="fab fa-skype"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="lower-content">
+						<h3><a href="team.html">Adewale Bryan</a></h3>
+						<div class="designation">Sales Lead Manager</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Team Block -->
+			<div class="team-block col-lg-3 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="image">
+						<img src="{% static 'public/images/Olamide.jpg' %}" alt="" />
+						<div class="overlay-box">
+							<ul class="social-icons">
+								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+								<li><a href="#"><i class="fab fa-skype"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="lower-content">
+						<h3><a href="team.html">Ayodele Odusola</a></h3>
+						<div class="designation">Marketing Manager</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Team Block -->
+			<div class="team-block col-lg-3 col-md-6 col-sm-12">
+				<div class="inner-box">
+					<div class="image">
+						<img src="{% static 'public/images/Fumi.jpg' %}" alt="" />
+						<div class="overlay-box">
+							<ul class="social-icons">
+								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+								<li><a href="#"><i class="fab fa-skype"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="lower-content">
+						<h3><a href="team.html">Ayomide Soetan</a></h3>
+						<div class="designation"> Tele- lead customer care</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+</section>
+<!-- End Team Section -->
+
+{% endblock content %}
